@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Shindo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Veterinaria Shindo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#register">Registro</a></li>
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Veterinaria Shindo</h2>
+            <p>Proveemos el mejor cuidado para tus mascotas.</p>
+            <img src="cat.jpg" alt="Gato feliz">
+        </section>
+        <section id="register">
+            <h2>Registro de Usuarios</h2>
+            <form id="registration-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="pet-name">Nombre de la Mascota:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+                
+                <label for="pet-type">Tipo de Mascota:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="gato">Gato</option>
+                    <option value="perro">Perro</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Veterinaria Shindo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
